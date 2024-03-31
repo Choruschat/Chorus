@@ -69,8 +69,8 @@
     <div id="messages"></div>
 
     <div id="sendMsg">
-        <input type="text" id="msgTxt" placeholder="ENTER YOUR MSG...">
-        <input type="submit" id="msgBtn" value="send" onclick="module.sendMsg()">
+        <input type="text" id="msgTxt" placeholder="თქვენი მესისჯი...">
+        <input type="submit" id="msgBtn" value="გაგზავნა" onclick="module.sendMsg()">
     </div>
 
     <script>
@@ -100,7 +100,7 @@ const firebaseConfig = {
         if(sessionStorage.getItem('sender')){
             sender = sessionStorage.getItem('sender');
         } else {
-            sender = prompt('სახელი ბიჭოოო!!!');
+            sender = prompt('სახელი და გვარი');
             sessionStorage.setItem('sender',sender);
         }
 
